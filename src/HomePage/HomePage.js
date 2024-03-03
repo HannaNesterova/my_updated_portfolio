@@ -1,3 +1,4 @@
+import Experience from '../Experiance/Experience';
 import MainPage from '../MainPage/MainPage';
 import NavBar from '../NavBar/NavBar';
 import Skills from '../Skills/Skills';
@@ -9,6 +10,7 @@ function HomePage(){
             <NavBar />
             <MainPage />
             <Skills />
+            <Experience />
         </div>
     )
 }
