@@ -1,10 +1,10 @@
-import img01 from '../img/experience/01.jpeg';
-import img02 from '../img/experience/02.jpeg';
-import img03 from '../img/experience/03.jpeg';
-import img04 from '../img/experience/04.jpeg';
-import img05 from '../img/experience/05.jpeg';
-import img06 from '../img/experience/06.jpeg';
-import img07 from '../img/experience/07.jpeg';
+import img01 from '../img/experience/01.jpg';
+import img02 from '../img/experience/02.jpg';
+import img03 from '../img/experience/03.jpg';
+import img04 from '../img/experience/04.jpg';
+import img05 from '../img/experience/05.jpg';
+import img06 from '../img/experience/06.jpg';
+import img07 from '../img/experience/07.jpg';
 
 
 
@@ -44,7 +44,4 @@ export const dataExperience = [
         title: 'React, Bootstrap',
         link:'https://polins-pl.netlify.app'
     },
- 
- 
- 
 ]
