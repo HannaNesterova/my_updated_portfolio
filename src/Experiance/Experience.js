@@ -48,7 +48,7 @@ function Experience(){
                     <Slider {...settings}>
                         {dataExperience.map((item, index) => (
                             <div key={index} className={styles.mockup}>
-                                <img src={item.img} alt='img' width={'350px'} height={'230px'}/>
+                                <img className={styles.img} src={item.img} alt='img' />
                                 <p>I have used here : {item.title}</p>
                                 <a href={item.link} target='_blank'>Look</a>
                             </div>

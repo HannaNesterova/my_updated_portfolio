@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Roboto:wght@200;300;400;500&display=swap');
 
-  /* font-family: "Roboto", sans-serif;
-  font-family: "Madimi One", sans-serif; */
 .experience_container{
     padding: 20px;
     background-color: black;
@@ -15,7 +13,6 @@
     font-weight: 200;
     color: rgb(255, 255, 255);
     text-align: center;
-    margin-bottom: 80px;
 }
 .container h2 span{
     font-size: 40px;
@@ -30,6 +27,7 @@
 .mockup p{
     font-size: 20px;
     color: white;
+    font-family: "Roboto", sans-serif;
 }
 .mockup a{
     color: white;
@@ -39,4 +37,22 @@
     font-size: 16px;
     text-transform: uppercase;
     text-decoration: none;
+    transition: all 1s ease;
+}
+.mockup a:hover{
+    background-color: white;
+    color: black;
+
+}
+.img{
+    width:350px;
+    height:230px;
+}
+
+@media all and (max-width:450px){
+    .img{
+        width:245px;
+        height:170px;
+    }
+
 }

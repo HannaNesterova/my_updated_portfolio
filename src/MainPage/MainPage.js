@@ -17,15 +17,7 @@ function MainPage(){
                         <h2>Frontend <span> Developer </span></h2>
                     </div>
                     <div className={styles.main_title}>
-                        <p>I was born in Ukraine and lived there until a spring 2022. 
-                            Then I moved to Poland. 
-                            I started studying front-end development in the most difficult period of my life,
-                             when I lost my country and my home, and this study not only saved me, 
-                             but absorbed me completely, while studying, I seemed to close myself off from the 
-                             outside world and get into a wonderful world, like 'Alice in Wonderland', 
-                             who could create something unsurpassed from unknown codes and hashes and immediately see it 
-                             on her screen. 
-                            I'm passionate to combine design and technical knowledge.</p>
+                        <p>I'm passionate to combine design and technical knowledge.</p>
                     </div>
                         <div className={styles.main_buttons}>
                             <a href='https://www.instagram.com/hanna_nesterova/?igshid=MmJiY2I4NDBkZg%3D%3D' target='_blank'><FaInstagram /></a>

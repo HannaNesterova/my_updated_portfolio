@@ -17,7 +17,12 @@
     font-size: 40px;
     font-family: "Madimi One", sans-serif; 
     font-weight: 400;
-    color: black;
+    color: orange;
+    text-shadow: 
+    2px 2px 0 rgb(0, 0, 0),
+    -1px -1px 0 rgb(0, 0, 0),
+    1px -1px 0 rgb(0, 0, 0),
+    -1px 1px 0 rgb(0, 0, 0);
 }
 .skill{
     width: 150px;
@@ -55,4 +60,15 @@
 .skill:hover .icon svg {
     color: white;
     background-color: black;
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media all and (max-width:770px){
+    .skills_container{
+        gap: 5px;
+    }
 }
