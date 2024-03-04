@@ -1,12 +1,23 @@
+import { useEffect } from 'react';
 import styles from './AboutMe.module.css';
 import hero from '../img/hero2.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function AboutMe(){
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
     return(
         <div>
             <div className={styles.about_me_container}>
                 <div className={styles.container} id="about">
-                    <h2>About <span>Me</span></h2>
+                    <h2 
+                    data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">
+                        About <span>Me</span></h2>
                     <div className={styles.main}>
                     <div className={styles.hero_main}>
                         <img src={hero} alt='hero'/>

@@ -1,12 +1,24 @@
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import styles from './Feedbacks.module.css';
 import { dataFeedbacks } from '../data/dataFeedbacks';
 
 function Feedbacks(){
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
+    
     return(
         <div>
             <div className={styles.projects_main}>
                 <div className={styles.container}>
-                    <h2>Education & <span>Skills</span></h2>
+                    <h2 data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">
+                    Education & <span>Skills</span></h2>
                     <div className={styles.main}>
                         {dataFeedbacks.map((item, index) => (
                             <div key={index}className={styles.education_container}>

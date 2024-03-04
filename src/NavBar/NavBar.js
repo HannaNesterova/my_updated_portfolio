@@ -29,12 +29,13 @@ function NavBar(){
       handleToggle();
     }
   };
-    return(
-      <div>
+  return(
+    <div>
       <>
         <Navbar
           expand="sm"
           className={styles.container}
+          fixed="top"
         >
           <Container fluid>
             <Navbar.Brand
@@ -56,7 +57,7 @@ function NavBar(){
               placement="top"
             >
               <Offcanvas.Header closeButton>
-                <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+                <Offcanvas.Title>Menu</Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
@@ -96,4 +97,6 @@ function NavBar(){
     </div>
   );
 }
+
+
 export default NavBar;

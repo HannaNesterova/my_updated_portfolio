@@ -1,3 +1,6 @@
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
@@ -8,10 +11,18 @@ import secondTab from '../img/experience/09.jpeg';
 import thirdTab from '../img/experience/10.jpeg';
 
 function Projects(){
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
     return(
         <div className={styles.projects_main}>
         <div className={styles.container} id="projects">
-            <h2>The most interesting <span>Projects</span></h2>
+            <h2 data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                    >The most interesting <span>Projects</span></h2>
             <div className={styles.main}>
             <Tab.Container id="left-tabs-example" defaultActiveKey="first">
             <Row>

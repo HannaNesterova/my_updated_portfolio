@@ -1,11 +1,20 @@
 import React from "react";
 import Slider from "react-slick";
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from './Experience.module.css';
 import { dataExperience } from '../data/dataExperience';
 
 function Experience(){
+    
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
+
     const settings = {
         dots: true,
         infinite: false,
@@ -44,7 +53,10 @@ function Experience(){
     return(
         <div className={styles.experience_container}>
             <div className={styles.container}>
-                <h2>My <span>Experience</span></h2>
+                <h2 data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                    >My <span>Experience</span></h2>
                     <Slider {...settings}>
                         {dataExperience.map((item, index) => (
                             <div key={index} className={styles.mockup}>
