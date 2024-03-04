@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Roboto:wght@200;300;400;500&display=swap');
 
-  /* font-family: "Roboto", sans-serif;
-  font-family: "Madimi One", sans-serif; */
+.projects_main{
+  background-color: black;
+  padding: 20px;
+}
 .container{
     margin: 100px 25px;
 }
@@ -9,7 +11,7 @@
     font-size: 40px;
     font-family: "Roboto", sans-serif;
     font-weight: 200;
-    color: black;
+    color: rgb(255, 255, 255);
     text-align: center;
     margin-bottom: 80px;
 }
@@ -23,4 +25,73 @@
     -1px -1px 0 rgb(0, 0, 0),
     1px -1px 0 rgb(0, 0, 0),
     -1px 1px 0 rgb(0, 0, 0);
+}
+.tab_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: orange;
+    padding: 20px;
+    border-radius: 20px;
+}
+.tab_container p{
+    font-size: 20px;
+    color: white;
+    font-family: "Madimi One", sans-serif;
+}
+.tab_container img{
+    max-width: 500px;
+    border-radius: 10px;
+}
+.tab_box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.tab_box ul{
+    font-size: 25px;
+    color: white;
+    width: 350px;
+    background-color: rgba(0, 0, 0, 0.636);
+    padding: 10px;
+    border-radius: 10px;
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+}
+.tab {
+    background-color: rgba(255, 166, 0, 0.459);
+    color: white;
+  }
+  .tab_container a{
+    color: white;
+    background-color: #0e6efd;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    transition: all 1s ease;
+    margin-top: 10px;
+  }
+  .tab_container a:hover{
+    background-color: rgb(255, 255, 255);
+    color: #0e6efd;
+  }
+
+@media all and (max-width:690px){
+    .tab_container img{
+        max-width: 300px;
+    }
+    .tab_box ul{
+        font-size: 16px;
+        max-width: 300px;
+    }
+}
+@media all and (max-width:450px){
+    .tab_container img{
+        max-width: 280px;
+    }
+    .tab_box ul{
+        max-width: 250px;
+    }
 }

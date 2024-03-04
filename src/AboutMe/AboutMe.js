@@ -5,7 +5,7 @@ function AboutMe(){
     return(
         <div>
             <div className={styles.about_me_container}>
-                <div className={styles.container}>
+                <div className={styles.container} id="about">
                     <h2>About <span>Me</span></h2>
                     <div className={styles.main}>
                     <div className={styles.hero_main}>

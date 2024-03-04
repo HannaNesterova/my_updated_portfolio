@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Roboto:wght@300;400;500&display=swap');
 
-  /* font-family: "Roboto", sans-serif;
-  font-family: "Madimi One", sans-serif; */
 .container{
     margin: 100px 25px;
 }
@@ -78,6 +76,10 @@
 .main_buttons a svg:hover {
 background-color: orange;
 color: white;
+}
+.hero{
+    max-width: 400px;
+    width: 100%;
 }
 
 @media all and (max-width:820px){

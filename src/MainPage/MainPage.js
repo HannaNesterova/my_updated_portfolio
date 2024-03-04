@@ -29,7 +29,7 @@ function MainPage(){
 
 
                 <div className={styles.main_img}>
-                    <img src={hero}alt='hero' width={'400px'}/>
+                    <img src={hero}alt='hero' className={styles.hero}/>
                 </div>
             </div>
         </div>
