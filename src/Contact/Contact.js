@@ -6,8 +6,12 @@ import { FaGithub } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import styles from './Contact.module.css';
+import { useTranslation } from 'react-i18next';
+
 
 function Contact(){
+    const {i18n, t} = useTranslation();
+
 
     useEffect(() => {
         AOS.init();
@@ -20,7 +24,7 @@ function Contact(){
             <h2 data-aos="fade-down"
                 data-aos-easing="linear"
                 data-aos-duration="1500">
-                    My <span>Contacts</span></h2>
+                    {t('my')} <span>{t('contacts')}</span></h2>
             <div className={styles.main}>
             <div className={styles.main_buttons}>
                 <a href='https://www.instagram.com/hanna_nesterova/?igshid=MmJiY2I4NDBkZg%3D%3D' target='_blank'><FaInstagram /></a>
@@ -29,7 +33,7 @@ function Contact(){
                 <a href='https://www.linkedin.com/in/hanna-nesterova-7b02a5269/' target='_blank'><FaLinkedin /></a>
             </div>
                 <div>
-                    <h3>Let’s <span>talk</span> for Something special.</h3>
+                    <h3>{t('lets')} <span>{t('talk')}</span> {t('special')}</h3>
                 </div>
             </div>
         </div>

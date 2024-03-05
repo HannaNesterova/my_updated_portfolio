@@ -3,8 +3,10 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import styles from './Feedbacks.module.css';
 import { dataFeedbacks } from '../data/dataFeedbacks';
+import { useTranslation } from 'react-i18next';
 
 function Feedbacks(){
+    const {i18n, t} = useTranslation();
 
     useEffect(() => {
         AOS.init();
@@ -18,7 +20,7 @@ function Feedbacks(){
                     <h2 data-aos="fade-down"
                         data-aos-easing="linear"
                         data-aos-duration="1500">
-                    Education & <span>Skills</span></h2>
+                    {t('education')} & <span>{t('skills')}</span></h2>
                     <div className={styles.main}>
                         {dataFeedbacks.map((item, index) => (
                             <div key={index}className={styles.education_container}>

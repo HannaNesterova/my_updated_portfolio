@@ -7,8 +7,10 @@ import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { useTranslation } from 'react-i18next';
 
 function MainPage(){
+     const {i18n, t} = useTranslation();
 
     useEffect(() => {
         AOS.init();
@@ -20,13 +22,13 @@ function MainPage(){
             <div className={styles.main_container}>
                 <div className={styles.main_text}>
                     <div className={styles.main_pretitle}>
-                        <h1>Hello I’m <span>Hanna Nesterova</span></h1>
+                        <h1>{t('hello')} <span>{t('my_name')}</span></h1>
                     </div>
                     <div className={styles.main_title}>
                         <h2>Frontend <span> Developer </span></h2>
                     </div>
                     <div className={styles.main_title}>
-                        <p>I'm passionate to combine design and technical knowledge.</p>
+                        <p>{t('combine')}</p>
                     </div>
                         <div className={styles.main_buttons}>
                             <a href='https://www.instagram.com/hanna_nesterova/?igshid=MmJiY2I4NDBkZg%3D%3D' target='_blank' 

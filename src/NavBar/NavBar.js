@@ -7,8 +7,14 @@ import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../img/logo.svg';
+import { useTranslation } from 'react-i18next';
 
 function NavBar(){
+      const {i18n, t} = useTranslation();
+    // const languageToogle =() => {
+    //     i18n.changeLanguage(i18n.language === 'en' ? 'uk' : 'en')
+    // }
+
   const [expanded, setExpanded] = useState(false);
 
   const handleToggle = () => {
@@ -68,7 +74,7 @@ function NavBar(){
                     onClick={handleLinkClick}
                     className={styles.item}
                   >
-                    Who am I?
+                    {t('me_nav_bar')}
                   </Link>
                   <Link
                     to="projects"
@@ -77,7 +83,7 @@ function NavBar(){
                     onClick={handleLinkClick}
                     className={styles.item}
                   >
-                    Projects
+                    {t('projects_nav_bar')}
                   </Link>
                   <Link
                     to="contacts"
@@ -86,8 +92,12 @@ function NavBar(){
                     onClick={handleLinkClick}
                     className={styles.item}
                   >
-                    Contacts
+                     {t('contacts_nav_bar')}
                   </Link>
+                   {/* <button onClick={languageToogle}>
+                      {i18n.language === 'en' ? 'EN' : 'UK'}
+                   </button> */}
+
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
