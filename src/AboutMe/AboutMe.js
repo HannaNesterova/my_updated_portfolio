@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import styles from './AboutMe.module.css';
-import hero from '../img/hero2.png';
+import hero from '../img/hero.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useTranslation } from 'react-i18next';
