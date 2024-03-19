@@ -33,7 +33,8 @@ function Contact(){
                 <a href='https://www.linkedin.com/in/hanna-nesterova-7b02a5269/' target='_blank'><FaLinkedin /></a>
             </div>
                 <div>
-                    <h3>{t('lets')} <span>{t('talk')}</span> {t('special')}</h3>
+                    <h3> {t('lets')} <span> {t('talk')} </span> {t('special')} </h3>
+                    <a href='https://docs.google.com/forms/d/1n0jeJ9COFcOvxki51c8nvFAeLFT4iu_aFaNOarRIso0/edit' target='_blank' className={styles.click_btn}>Let's start</a>
                 </div>
             </div>
         </div>

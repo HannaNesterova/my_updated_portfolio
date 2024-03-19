@@ -2,7 +2,7 @@ import first from '../img/01.png';
 import two from '../img/02.png';
 import three from '../img/03.png';
 import four from '../img/04.png';
-
+import five from '../img/05.png';
 
 
 
@@ -38,5 +38,13 @@ export const dataFeedbacks = [
         year: '2022',
         link: 'https://p13.zdusercontent.com/attachment/10812405/tcuIbRAU9l0P9kcl1gGJIsDJ9?token=eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..pfgXsY7kvey3LbRUCkpWzg.ruqBGWKdw-sBPml9-THjyVHfxhJZrrFIvWrJyJvu6T_nyZ8DbvXmBh_vcP9CBi-3lKX8ghllpEvXTkzeNtrzSQEBt1tk0P1E6tl-8cBguioMUIH_M6umtRWzGZE3yu-I7jlC3Veqk8aPk2_1BQZHCJ9Y988afftu5q7pH9ynBDcxrTEVEepVTfh7AJleN4_1wXFYAdJ0PgStB-PV4UxYt9AIFVniYR_lLaske7X8jEvWlBZcId7vYvg1LHt3Fc5-Ad1KtDXA3ak0O113nqXXtKIsz5TZu_YkC1TAVz94ah4.-UxcyTnf4Ndd3SWkR331ag04',
         img: four
+    },
+    {
+        name:  'Can She Code" School',
+        place: '(Monreal,Canada)',
+        text: 'Certificate in Node.js',
+        year: '2024',
+        link: 'https://p13.zdusercontent.com/attachment/10812405/vUu9XROxwiYBzsIgVSjhO4Agx?token=eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..tRPMQCukiUafpUYsY2d6Sg.yTIkUer8ktjn-tcwXFItlB5na0mm1fw9PEoVJ-VPcn6qCsptGp-SO57nKwEPJl-lNRtFVLeQbMP6h10oqhJYgjA9uiZM6srR02LFtwk65o9SXQypGTkA-TlqO9d8bZbVelNq9-ERJwXz5and_7IjOwBWSQFAVET9jMJrbv4DK1BLswrIQRzAWcJks_n2oyEt88jjLlmmaNThWnq6zDpARW01zZj6d6Y8tq3JodpFA15s_QYUg91xFomhYxbzlxdleWnnfixZI_yb0qbWbiLVCtqRut_9A5PHV73mqAuwESg.X9l1lhYqNazcNjYpmO0Q9A',
+        img: five
     }
 ]

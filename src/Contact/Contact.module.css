@@ -75,3 +75,22 @@
 background-color: orange;
 color: white;
 }
+.click_btn{
+  width: 100px;
+  height: 40px;
+  background-color: #0d6efd;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  margin:auto 0;
+  transition: all 1s ease;
+}
+.click_btn:hover{
+  background-color: orange;
+}
+
+span{
+  margin: 0px 5px;
+}
