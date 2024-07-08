@@ -1,32 +1,29 @@
-import { useState } from 'react';
-import { Link } from 'react-scroll';
-import styles from './NavBar.module.css';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Offcanvas from 'react-bootstrap/Offcanvas';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from '../img/logo.svg';
-import { useTranslation } from 'react-i18next';
+import { useState } from "react";
+import { Link } from "react-scroll";
+import styles from "./NavBar.module.css";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import Offcanvas from "react-bootstrap/Offcanvas";
+import "bootstrap/dist/css/bootstrap.min.css";
+import logo from "../img/logo.svg";
+import { useTranslation } from "react-i18next";
 
-function NavBar(){
-      const {i18n, t} = useTranslation();
-    // const languageToogle =() => {
-    //     i18n.changeLanguage(i18n.language === 'en' ? 'uk' : 'en')
-    // }
+function NavBar() {
+  const { i18n, t } = useTranslation();
 
   const [expanded, setExpanded] = useState(false);
 
   const handleToggle = () => {
-    setExpanded(!expanded); 
+    setExpanded(!expanded);
   };
 
   const handleClose = () => {
-    setExpanded(false); 
+    setExpanded(false);
   };
 
   const handleLinkClick = () => {
-    setExpanded(false); 
+    setExpanded(false);
   };
   const handleLogoClick = (event) => {
     if (event.target.classList.contains(styles.logo)) {
@@ -35,21 +32,17 @@ function NavBar(){
       handleToggle();
     }
   };
-  return(
+  return (
     <div>
       <>
-        <Navbar
-          expand="sm"
-          className={styles.container}
-          fixed="top"
-        >
+        <Navbar expand="sm" className={styles.container} fixed="top">
           <Container fluid>
             <Navbar.Brand
               href="#"
               className={styles.logo}
               onClick={handleLogoClick}
             >
-              <img src={logo} alt='logo'/>
+              <h3>Hanna Nesterova</h3>
             </Navbar.Brand>
             <Navbar.Toggle
               aria-controls="offcanvasNavbar"
@@ -74,7 +67,7 @@ function NavBar(){
                     onClick={handleLinkClick}
                     className={styles.item}
                   >
-                    {t('me_nav_bar')}
+                    {t("me_nav_bar")}
                   </Link>
                   <Link
                     to="projects"
@@ -83,7 +76,7 @@ function NavBar(){
                     onClick={handleLinkClick}
                     className={styles.item}
                   >
-                    {t('projects_nav_bar')}
+                    {t("projects_nav_bar")}
                   </Link>
                   <Link
                     to="contacts"
@@ -92,12 +85,8 @@ function NavBar(){
                     onClick={handleLinkClick}
                     className={styles.item}
                   >
-                     {t('contacts_nav_bar')}
+                    {t("contacts_nav_bar")}
                   </Link>
-                   {/* <button onClick={languageToogle}>
-                      {i18n.language === 'en' ? 'EN' : 'UK'}
-                   </button> */}
-
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
@@ -107,6 +96,5 @@ function NavBar(){
     </div>
   );
 }
-
 
 export default NavBar;
